@@ -22,5 +22,10 @@ pipeline {
                 echo 'Deploying'
             }
         }
+        stage('Maintenance') {
+            steps {
+                echo 'After release'
+            }
+        }
     }
 }
